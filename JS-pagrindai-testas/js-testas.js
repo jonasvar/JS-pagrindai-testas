@@ -4,6 +4,7 @@ Sugeneruokite atsitiktinį skaičių (eurų sumą) nuo 1 iki 1000.
 Pritaikykite savo sukurtą funkciją ir išspausdinkite atitikmenį
 doleriais.
 */
+console.log(`Pirma užduotis:`)
 
 function pinigai(euras){
     let dolerisKursas = 1.08
@@ -21,6 +22,7 @@ Sugeneruokite atsitiktinį skaičių (dolerių sumą) nuo 1 iki 1000.
 Pritaikykite savo sukurtą funkciją ir išspausdinkite atitikmenį
 eurais.
 */
+console.log(`Antra užduotis:`)
 
 function pinigai(doleris){
     let eurasKursas = 0.92
@@ -42,6 +44,7 @@ Viršsvoris = BMI > 25
 Normalu = 18.5 <= BMI < 25
 Per mažas svoris = BMI < 18.5
 */
+console.log(`Trečia užduotis:`)
 
 function zmogusBMI(svoris, ugis){
     return svoris / ugis**2
@@ -68,6 +71,7 @@ console.log(``)
 pasakytų kiek tai yra sekundėmis, minutėmis, valandomis,
 dienomis.
 */
+console.log(`Ketvirta užduotis:`)
 
 function metai(mm){
     let sekundes = mm * 365 * 24 * 60 * 60
@@ -87,18 +91,32 @@ let amzius = 28
 let laikas = metai(amzius)
 console.log(`${amzius} metai turi: ${laikas.sekundes} sekundžiu, ${laikas.minutes} minučių, ${laikas.valandos} valandu, ${laikas.dienos} dienu.`)
 
-
+console.log(``)
 /*
 5. Parašykite programą, kuri konvertuos termometro
 duomenis iš Farenheito į Celsijų, ir atvirkščiai.
 */
+console.log(`Penkta užduotis:`)
 
-// function temp(celcijai){
-//     let f = 33.8
-//     let farengeitas = f * celcijai
-//     return farengeitas                           // Šito nežinau...
-// }
+function temp(celcijai){
+    let f = 33.8
+    let farengeitas = f * celcijai
+    return farengeitas                           
+}
+let laipsnis = 2
+let farengeitas = temp(laipsnis)
+console.log(`${laipsnis} celcijus pavertus į farengetą gauname ${farengeitas.toFixed(1)} farengeitų.`) 
 
+function temp1(farengeitas1){
+    // let c = -17.2
+    // let celsijus = c * farengeitas1
+    return (farengeitas1 - 32) * 1.8    //celsijus                           
+}
+let laipsnis1 = 17.8                                                                 //Su farengeitais padaryta ne iki galo. 
+let celcijus = temp1(laipsnis1)
+console.log(`${laipsnis1} farengeitu pavertus į celcijus gauname ${celcijus.toFixed(1)} celciju.`)
+
+console.log(``)
 // console.log(farengeitas)
 
 
@@ -107,6 +125,7 @@ duomenis iš Farenheito į Celsijų, ir atvirkščiai.
 1-2-3-4-5-6-7-8-9-10 vienoje eilutėje. Prieš vienetą ir po
 dešimties neturėtų būti brūkšniuko.
 */
+console.log(`Šešta užduotis:`)
 
 let skiaciai = []
 for(let i = 1; i <= 10; i++){
@@ -124,6 +143,7 @@ console.log(``)
 ****
 *****
 */
+console.log(`Septinta užduotis:`)
 
 let zenklas = ''
 for(let i = 1; i <= 5; i++){
@@ -135,6 +155,7 @@ console.log(``)
 /*
 8. Parašykite kodą, kuris apskaičiuos kiek liko dienų iki Kalėdų.
 */
+console.log(`Aštunta užduotis:`)
 
 let dabartis = new Date()
 
@@ -151,6 +172,7 @@ tekstinę eilutę. Turėtumėte gauti tokį rezultatą:
 Tomas,Dainius,Paulius,Jonas
 Tomas+Dainius+Paulius+Jonas
 */
+console.log(`Devinta užduotis:`)
 
 let vardai = ['Tomas', 'Dainius', 'Paulius', 'Jonas']
 console.log(`${vardai}`)
